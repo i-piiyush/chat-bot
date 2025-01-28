@@ -17,7 +17,7 @@ const Navbar = () => {
   rootMargin="-50px"
   />
     </nav>
-  );
+  ); 
 };
 
 export default Navbar;
