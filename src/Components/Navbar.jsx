@@ -1,23 +1,23 @@
 import React from "react";
-import SplitText from "./SplitText";
-
+import ShinyText from "../../components/ShinyText/ShinyText";
+import SplitText from "../../components/SplitText/SplitText";
 
 const Navbar = () => {
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
   return (
     <nav className=" text-gray-50 flex justify-between items-center">
-      
-      <SplitText
-  text="Hello, Tailwind!"
-  className="text-7xl "
-  delay={100}
-  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-  easing="easeOutCubic"
-  threshold={0.2}
-  rootMargin="-50px"
-  />
+     
+
+      <ShinyText
+        text="Just some shiny text!"
+        disabled={false}
+        speed={3}
+        className="text-3xl"
+      />
     </nav>
-  ); 
+  );
 };
 
 export default Navbar;
