@@ -1,25 +1,13 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
-import TrueFocus from "./TrueFocus";
+import HeroSection from "./Components/HeroSection";
 
 function App() {
-
-
   return (
-    <>
-    
+    <main className="min-h-[100vh] w-screen ">
       <Navbar />
-      <TrueFocus 
-      sentence="True Focus"
-      manualMode={true}
-      blurAmount={5}
-      borderColor="#FFC300 "
-      animationDuration={0.5}
-      pauseBetweenAnimations={0}
-      
-      />
-    
-    </>
+      <HeroSection />
+    </main>
   );
 }
 
